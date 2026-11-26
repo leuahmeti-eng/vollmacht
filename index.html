@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vollmacht – Energieberatung Leutrim Ahmeti</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #eef1f5; }
+  iframe { border: 0; width: 100%; height: 100%; display: block; }
+  .msg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: #0B2238; text-align: center; padding: 60px 24px; font-size: 17px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<script>
+  var APP = 'https://script.google.com/macros/s/AKfycbz9Vz2ziuUE6_1AXB3qqJYE3ySr4o_PGg5EdGpGn2jKmlZ9Qrd69gVaLkSXWpo4UqQijw/exec';
+  var k = new URLSearchParams(location.search).get('k') || '';
+  if (/^[A-Za-z0-9]{6,40}$/.test(k)) {
+    var f = document.createElement('iframe');
+    f.src = APP + '?v=' + encodeURIComponent(k);
+    f.title = 'Vollmacht unterschreiben';
+    f.allow = 'clipboard-write';
+    document.body.appendChild(f);
+  } else {
+    var d = document.createElement('div');
+    d.className = 'msg';
+    d.textContent = 'Bitte öffnen Sie den Link aus Ihrer Nachricht. Bei Fragen: Energieberatung Leutrim Ahmeti, Tel. 0155 63208320';
+    document.body.appendChild(d);
+  }
+</script>
+</body>
+</html>
